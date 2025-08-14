@@ -22,7 +22,13 @@ Esse é o meu primeiro projeto desenvolvido em Angular, que consome uma API de g
 api_key: string = ""; //Adicione a chave da sua API aqui, entre as aspas.
 ```
 
-8. Após colar a chave da API, abra o terminal e rode o servidor:
+8. Após colar a chave da API, abra o terminal e instale a pasta node_modules:
+
+```bash
+npm install
+``` 
+
+9. Após colar a chave da API, abra o terminal e rode o servidor:
 
 ```bash
 ng serve
