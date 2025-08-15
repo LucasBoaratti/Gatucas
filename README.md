@@ -22,16 +22,22 @@ Esse é o meu primeiro projeto desenvolvido em Angular, que consome uma API de g
 api_key: string = ""; //Adicione a chave da sua API aqui, entre as aspas.
 ```
 
-8. Após colar a chave da API, abra o terminal e instale a pasta node_modules:
+8. Após colar a chave da API, abra o terminal e instale as dependências do Angular:
 
 ```bash
-npm install
+npm install -g @angular/cli
 ``` 
 
-9. Após colar a chave da API, abra o terminal e rode o servidor:
+9. Agora, rode o servidor:
 
 ```bash
 ng serve
+```
+
+10. Se não der certo, rode:
+
+```bash
+npx ng serve
 ```
 
 E pronto! Agora aprecie as imagens de gatinhos superfofos!!! :D
