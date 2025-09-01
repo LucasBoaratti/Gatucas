@@ -21,7 +21,7 @@
 }
 
 .cardFoto img {
-     @apply w-full h-[120px] object-cover block;
+     @apply w-full h-[200px] object-cover block;
 }
 
 .modal {
