@@ -9,7 +9,7 @@
 }
 
 .titulo {
-     @apply text-center text-[35px];
+     @apply text-center text-[35px] text-[white];
 }
 
 .cardFoto {
