@@ -1,0 +1,49 @@
+// Importando as variáveis global do site
+
+@use '../../styles.scss' as *;
+
+// Container do modal
+
+.containerModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $cor-fundo-modal;
+
+    // Estilização do modal
+
+    .modal {
+        background-color: #ffffff;
+        color: $cor-fonte-escura;
+        padding: 15px;
+        border-radius: 25px;
+    }
+
+    .modal img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    // Estilização do botão
+
+    .botao {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .botao button {
+        background-color: $cor-fundo-cabecalho;
+        padding: 7px;
+        width: 150px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+}

@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+// Variáveis para estilização
+
+$cor-fundo-cabecalho: #ffa500;
+$cor-fonte: #ffffff;
+$cor-fonte-escura: #000000;
+$cor-fundo-site: #f2efef;
+$cor-fundo-card: #000000;
+$cor-fundo-modal: #A1A1A180;
+
+// Resetando o CSS do site
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "ChicCat", sans-serif;
+}
+
+// Definindo a fonte padrão do site
+
+@font-face {
+    font-family: "ChicCat";
+    src: url("assets/font/ChicCat.ttf") format("truetype");
+}
+
+// Estilização padrão do site
+
+body {
+    background-color: $cor-fundo-site;
+}
