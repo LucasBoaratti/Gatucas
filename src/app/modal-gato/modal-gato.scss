@@ -2,6 +2,15 @@
 
 @use '../../styles.scss' as *;
 
+// Animação do modal
+
+@keyframes fadeModal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 // Container do modal
 
 .containerModal {
@@ -23,11 +32,17 @@
         color: $cor-fonte-escura;
         padding: 15px;
         border-radius: 25px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeModal 0.5s ease-in-out forwards;
+        overflow-y: auto;
+        margin: 20px 0;
+        max-height: 90vh;
     }
 
     .modal img {
-        width: 100%;
-        height: 100%;
+        width: 500px;
+        height: auto;
         border-radius: 20px;
     }
 
@@ -45,5 +60,11 @@
         border: none;
         border-radius: 15px;
         cursor: pointer;
+        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    .botao button:hover {
+        background-color: $cor-fonte-escura;
+        color: $cor-fonte;
     }
 }

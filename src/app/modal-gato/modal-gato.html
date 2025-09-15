@@ -1,8 +1,9 @@
+<!-- Modal de imagem dos gatos -->
 <section class="containerModal" *ngIf="open">
     <div class="modal">
         <img [src]="imagemGato" alt="Imagem de um gatinho fofo.">
         <div class="botao"> 
-            <button type="button" (click)="fecharModalGato()">Fechar</button>
+            <button type="button" (click)="closeModalGato()">Fechar</button>
         </div>
     </div>
 </section>
