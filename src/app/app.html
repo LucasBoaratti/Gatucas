@@ -8,9 +8,11 @@
 
 <main>
     <section class="containerCards">
+        <!-- Buscando os dados da API de gatos -->
         <div *ngFor="let gato of gatos" class="cardGato">
             <img [src]="gato.url" alt="Imagem de um gatinho fofo." (click)="abrirImagem(gato.url)">
         </div>
-        <app-modal-gato [open]="mostrarImagemGato" [fecharModalGato]="fecharImagem" [imagemGato]="imagemSelecionada"></app-modal-gato>
+        <!-- Exibindo o modal após clicar em uma imagem, para exibí-la por completo -->
+        <app-modal-gato [open]="mostrarImagemGato" [closeModalGato]="fecharImagem" [imagemGato]="imagemSelecionada"></app-modal-gato>
     </section>
 </main>
